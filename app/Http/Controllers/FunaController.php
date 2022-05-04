@@ -101,6 +101,6 @@ class FunaController extends Controller
     public function filosoficPhrase()
     {
         $funa = FUNAS[array_rand(FUNAS, 1)];
-        return "<img src=\"".$funa["Imagen"]."\"><br><p>".$funa["Frase Filosofica"]."</p>";
+        return "<img src=\"".$funa["Imagen"]."\"><br><p>".$funa["Frase Filosofica"]."</p><br><p>".gethostbyname(gethostname())."</p>";
     }
 }
